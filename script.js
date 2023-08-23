@@ -28,8 +28,15 @@ function initMaps() {
         if (this.readyState == 4 && this.status == 200){
             var maps = JSON.parse(this.responseText);
             console.log(maps);
+            
+            var finishedMaps = Object.keys(maps).length;
+            document.getElementById("maps-count").innerHTML = finishedMaps + "/75 maps have been finished";
+
             for (var map in maps) {
                 var div = document.createElement("div");
+                div.classList.add("col");
+                div.classList.add("mb-3");
+
                 div.dataset.mapId = map;
                 div.dataset.finishDate = maps[map].finish_date;
                 var title = document.createElement("h3");
