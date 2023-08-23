@@ -12,8 +12,12 @@
 <body>
     <h1 class="text-center">jnic kacky finishes</h1>
     <div class="container text-center">
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col">
+        
+        <button type="button" class="btn btn-primary btn-sm" id="sort-by-map-id" onclick="sortDivsByMapId()">Sort finishes ascending by map id</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="sort-by-date" onclick="sortDivsByDate()">Sort finishes ascending by finish date</button>
+
+        <div class="row row-cols-1 row-cols-md-3" id="maps">
+            <div class="col" data-finish-date="2023-08-19" data-map-id="258">
                 <h3>#258</h3>
                 2023-08-19
                 <iframe src="https://www.youtube-nocookie.com/embed/VcqP02QOmhU" width="100%" height="300px"
@@ -22,7 +26,7 @@
                     allowfullscreen>
                 </iframe>
             </div>
-            <div class="col">
+            <div class="col" data-finish-date="2023-08-20" data-map-id="260">
                 <h3>#260</h3>
                 2023-08-20
                 <iframe
@@ -30,7 +34,7 @@
                 allowfullscreen="" width="100%" height="300px">
                 </iframe>
             </div>
-            <div class="col">
+            <div class="col" data-finish-date="2023-08-23" data-map-id="277">
                 <h3>#277</h3>
                 2023-08-23
                 <iframe
@@ -38,7 +42,7 @@
                 allowfullscreen="" width="100%" height="300px">
                 </iframe>
             </div>  
-            <div class="col">
+            <div class="col" data-finish-date="2023-08-19" data-map-id="278">
                 <h3>#278</h3>
                 2023-08-19
                 <iframe src="https://www.youtube-nocookie.com/embed/YEA2TNEDfMA" width="100%" height="300px"
@@ -47,7 +51,7 @@
                     allowfullscreen>
                 </iframe>
             </div>
-            <div class="col">
+            <div class="col" data-finish-date="2023-08-19" data-map-id="292">
                 <h3>#292</h3>
                 2023-08-19
                 <iframe src="https://www.youtube-nocookie.com/embed/GssRUvQXZes" width="100%" height="300px"
@@ -56,15 +60,15 @@
                     allowfullscreen>
                 </iframe>
             </div>
-            <div class="col">
+            <div class="col" data-finish-date="2023-08-22" data-map-id="297">
                 <h3>#297</h3>
                 2023-08-22
                 <iframe
                 src="https://clips.twitch.tv/embed?clip=EnticingHumbleChoughGivePLZ-hD4yBY1NN1UKVwY9&parent=kacky.jnic.club"
                 allowfullscreen="" width="100%" height="300px">
                 </iframe>
-            </div>            
-            <div class="col">
+            </div>
+            <div class="col" data-finish-date="2023-08-20" data-map-id="300">
                 <h3>#300</h3>
                 2023-08-20
                 <iframe
@@ -77,6 +81,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
