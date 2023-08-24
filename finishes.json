@@ -29,6 +29,12 @@
         "isYouTubeShort": true,
         "clip": "https://www.youtube-nocookie.com/embed/JmMG4glZv7c"
     },
+    "269":
+    {
+        "finish_date": "2023-08-24",
+        "isYouTubeShort": false,
+        "clip": "https://clips.twitch.tv/embed?clip=BumblingYummyPigKappaRoss-cVleBFZ3T7qb686-&parent=kacky.jnic.club"
+    },
     "277":
     {
         "finish_date": "2023-08-23",
