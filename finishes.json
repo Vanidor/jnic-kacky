@@ -11,6 +11,12 @@
         "isYouTubeShort": true,
         "clip": "https://www.youtube-nocookie.com/embed/yjMHmiAeiAo"
     },
+    "240":
+    {
+        "finish_date": "2023-09-05",
+        "isYouTubeShort": false,
+        "clip": "https://clips.twitch.tv/embed?clip=AgitatedRamshackleLocustSoBayed-Gbp1YWkcQD3y4YTd&parent=kacky.jnic.club"
+    },
     "241":
     {
         "finish_date": "2023-09-02",
