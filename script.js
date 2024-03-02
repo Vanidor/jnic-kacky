@@ -42,8 +42,12 @@ function initMaps() {
                 var title = document.createElement("h3");
                 title.innerHTML = "Map " + map;
                 var button = document.createElement("button");
+                button.type = "button"
+                button.classList.add("mb-3");
+                button.classList.add("mx-3");
                 button.classList.add("btn");
-                button.classList.add("bttn-primary")
+                button.classList.add("btn-primary");
+                button.classList.add("btn-sm");
                 button.innerHTML = "Load Clip";
                 button.onclick = function() {
                     var clip = document.createElement("iframe");
