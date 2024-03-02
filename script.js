@@ -38,7 +38,7 @@ function initMaps() {
                 div.classList.add("mb-3");
 
                 div.dataset.mapId = map;
-                div.dataset.finishDate = maps[map].finish_date;
+                div.dataset.finishOrder = maps[map].finish_order;
                 var title = document.createElement("h3");
                 title.innerHTML = "Map " + map;
                 var button = document.createElement("button");
@@ -85,11 +85,11 @@ function initMaps() {
 // a function that sorts the divs of a website inside a div with the id "content" by the data-mapid tag 
 // ascending by the map id and replace the content of the div with the id "content" with the sorted divs
 function sortDivsByMapId() {
-    // remove the css class "btn-primary" from the button with the id "sort-by-date" and add the css class "btn-primary" to the button with the id "sort-by-map-id"
-    // also add the class "btn-secondary" to the button with the id "sort-by-date" and remove the class "btn-secondary" from the button with the id "sort-by-map-id"
-    document.getElementById("sort-by-date").classList.remove("btn-primary");
+    // remove the css class "btn-primary" from the button with the id "sort-by-finish-order" and add the css class "btn-primary" to the button with the id "sort-by-map-id"
+    // also add the class "btn-secondary" to the button with the id "sort-by-finish-order" and remove the class "btn-secondary" from the button with the id "sort-by-map-id"
+    document.getElementById("sort-by-finish-order").classList.remove("btn-primary");
     document.getElementById("sort-by-map-id").classList.add("btn-primary");
-    document.getElementById("sort-by-date").classList.add("btn-secondary");
+    document.getElementById("sort-by-finish-order").classList.add("btn-secondary");
     document.getElementById("sort-by-map-id").classList.remove("btn-secondary");
 
     var content = document.getElementById("maps");
@@ -112,13 +112,13 @@ function sortDivsByMapId() {
 // a function that sorts the divs of a website inside a div with the id "content"  by the data-finish-date tag
 // ascending by ethe finish date and replace the content of the div with the id "content" with the sorted divs. The 
 // dates are in the format YYYY-MM-DD
-function sortDivsByDate() {
-    // remove the css class "btn-primary" from the button with the id "sort-by-map-id" and add the css class "btn-primary" to the button with the id "sort-by-date"
-    // also add the class "btn-secondary" to the button with the id "sort-by-map-id" and remove the class "btn-secondary" from the button with the id "sort-by-date"
+function sortDivsByFinishOrder() {
+    // remove the css class "btn-primary" from the button with the id "sort-by-map-id" and add the css class "btn-primary" to the button with the id "sort-by-finish-order"
+    // also add the class "btn-secondary" to the button with the id "sort-by-map-id" and remove the class "btn-secondary" from the button with the id "sort-by-finish-order"
     document.getElementById("sort-by-map-id").classList.remove("btn-primary");
-    document.getElementById("sort-by-date").classList.add("btn-primary");
+    document.getElementById("sort-by-finish-order").classList.add("btn-primary");
     document.getElementById("sort-by-map-id").classList.add("btn-secondary");
-    document.getElementById("sort-by-date").classList.remove("btn-secondary");
+    document.getElementById("sort-by-finish-order").classList.remove("btn-secondary");
 
     var content = document.getElementById("maps");
     var divs = content.getElementsByTagName("div");
@@ -129,7 +129,7 @@ function sortDivsByDate() {
     }
 
     arr.sort(function(a, b) {
-        return new Date(a.dataset.finishDate) - new Date(b.dataset.finishDate);
+        return a.dataset.finishOrder - b.dataset.finishOrder;
     });
     
     for (var i = 0; i < arr.length; i++) {
