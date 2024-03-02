@@ -41,15 +41,20 @@ function initMaps() {
                 div.dataset.finishDate = maps[map].finish_date;
                 var title = document.createElement("h3");
                 title.innerHTML = "Map " + map;
-                // var date = document.createElement("p");
-                // date.innerHTML = maps[map].finish_date;
-                var clip = document.createElement("iframe");
-                clip.width = "100%";
-                clip.height = "300px";
-                clip.allowfullscreen = "";
-                clip.src = maps[map].clip;
+                var button = document.createElement("button");
+                button.classList.add("btn");
+                button.classList.add("bttn-primary")
+                button.innerHTML = "Load Clip";
+                button.onclick = function() {
+                    var clip = document.createElement("iframe");
+                    clip.width = "100%";
+                    clip.height = "300px";
+                    clip.allowfullscreen = "";
+                    clip.src = maps[this.parentNode.dataset.mapId].clip;
+                    this.parentNode.appendChild(clip);
+                    this.remove();
+                }
                 div.appendChild(title);
-                // div.appendChild(date);
                 div.appendChild(clip);
                 document.getElementById("maps").appendChild(div);
             }
