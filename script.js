@@ -55,7 +55,7 @@ function initMaps() {
                     this.remove();
                 }
                 div.appendChild(title);
-                div.appendChild(clip);
+                div.appendChild(button);
                 document.getElementById("maps").appendChild(div);
             }
             sortDivsByMapId();
