@@ -54,6 +54,10 @@ function initMaps() {
                     clip.width = "100%";
                     clip.height = "300px";
                     clip.allowfullscreen = "";
+                    // https://clips.twitch.tv/embed?clip=EnthusiasticFairSnailTBCheesePull-H5L6WxmPuQxBB4sP&parent=kacky.jnic.club
+                    var clip_slug = maps[this.parentNode.dataset.mapId].clip_slug
+                    var twitch_clip_embed_url = "https://clips.twitch.tv/embed?clip=" + clip_slug + "&parent=" + window.location.hostname
+                    console.log("Twitch clip embed URL: " + twitch_clip_embed_url)
                     clip.src = maps[this.parentNode.dataset.mapId].clip;
                     this.parentNode.appendChild(clip);
                     this.remove();
