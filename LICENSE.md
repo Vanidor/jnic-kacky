@@ -9,20 +9,20 @@ permission is granted, free of charge, to any user (be they a person or an organ
 1. the above copyright notice and this permission notice shall be included in all copies or modified versions of this software.
 
 2. the user is one of the following:
-    a. an individual person, labouring for themselves
-    b. a non-profit organisation
-    c. an educational institution
-    d. an organization that seeks shared profit for all of its members, and allows non-members to set the cost of their labor
+    1. an individual person, labouring for themselves
+    2. a non-profit organisation
+    3. an educational institution
+    4. an organization that seeks shared profit for all of its members, and allows non-members to set the cost of their labor
 
 3. if the user is an organization with owners, then all owners are workers and all workers are owners with equal equity and/or equal vote.
 
 4. if the user is an organization, then the user is not law enforcement or military, or working for or under either.
 
 5. the user does not use the software for ill-intentioned reasons, as determined by the authors of the software. said reasons include but are not limited to:
-    a. bigotry, including but not limited to racism, xenophobia, homophobia, transphobia, ableism, sexism, antisemitism, religious intolerance
-    b. pedophilia, zoophilia, and/or incest
-    c. support for cops and/or the military
-    d. any blockchain-related technology, including but not limited to cryptocurrencies
+    1. bigotry, including but not limited to racism, xenophobia, homophobia, transphobia, ableism, sexism, antisemitism, religious intolerance
+    2. pedophilia, zoophilia, and/or incest
+    3. support for cops and/or the military
+    4. any blockchain-related technology, including but not limited to cryptocurrencies
 
 6. the user does not promote or engage with any of the activities listed in the previous item, and is not affiliated with any group that promotes or engages with any of such activities.
 
